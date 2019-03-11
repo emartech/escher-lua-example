@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  lua:
+    build: .
+    volumes:
+      - .:/playground
+    working_dir: /playground
+    command: lua test.lua
